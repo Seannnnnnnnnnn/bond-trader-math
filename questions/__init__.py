@@ -35,3 +35,4 @@ def choose_random_question():
 # Every question file should import itself here
 from . import efp_spread
 from . import implied_yield
+from . import duration_hedge
