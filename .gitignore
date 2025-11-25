@@ -1,0 +1,29 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Flask / runtime files
+instance/
+*.pyc
+
+# Optional: cache folders
+*.egg-info/
+dist/
+build/
