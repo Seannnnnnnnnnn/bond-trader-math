@@ -12,7 +12,7 @@ def generate_duration_hedge():
     num_contracts = math.floor(num_contracts)
 
     return {
-        "question": f"The XM contract has a DV01 of ${fut_dv01}. A client buys ${vol}m of a bond with BPV of ${bond_dv01}. How many XM contracts must be bought? (Nearest whole number)",
+        "question": f"The XM contract has a DV01 of ${fut_dv01}. A client buys ${vol}m of a bond with BPV of ${bond_dv01}. How many XM contracts must be bought to hedge the duration? (Nearest whole number)",
         "answer": num_contracts,
         "type": "numeric",
         "tolerance": 0.00025  # 0.25 bps
