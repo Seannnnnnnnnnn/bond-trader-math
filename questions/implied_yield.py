@@ -6,7 +6,7 @@ def generate_implied_yield():
     price = round(random.uniform(90, 100), 2)
 
     # Example logic: traded yield = 100 - price
-    implied_yield = 100 - price
+    implied_yield = round(100 - price, 2)
     contract = random.choice(["XM", "YM"])
 
     return {

@@ -1,6 +1,5 @@
 from questions import register_question_type
 import random
-import math
 
 def generate_duration_hedge():
     
@@ -9,7 +8,7 @@ def generate_duration_hedge():
     bond_dv01 = round(random.uniform(450, 1500), 2)
 
     num_contracts = (vol * bond_dv01) / fut_dv01
-    num_contracts = math.floor(num_contracts)
+    num_contracts = round(num_contracts)
 
     return {
         "question": f"The XM contract has a DV01 of ${fut_dv01}. A client buys ${vol}m of a bond with BPV of ${bond_dv01}. How many XM contracts must be bought to hedge the duration? (Nearest whole number)",

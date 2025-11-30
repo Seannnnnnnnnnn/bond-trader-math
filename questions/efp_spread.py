@@ -10,7 +10,7 @@ def generate_efp():
     # calculate efp spread
     fut_yield = 100 - price
 
-    efp = (fut_yield - bond_yield) * 100
+    efp = round((fut_yield - bond_yield) * 100, 2)
 
     return {
         "question": f"The {contract} contract is trading at ${price}. A given bond is trading at a yield of {bond_yield}%. What is the EFP Spread?",

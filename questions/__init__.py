@@ -32,7 +32,8 @@ def choose_random_question():
 # -------------------------
 # EXPLICIT MODULE IMPORTS
 # -------------------------
-# Every question file should import itself here
 from . import efp_spread
 from . import implied_yield
 from . import duration_hedge
+from . import entry_pnl
+
